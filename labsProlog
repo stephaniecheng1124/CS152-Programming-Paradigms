@@ -1,0 +1,17 @@
+%lab 1
+%lab 2
+%
+%lab 3
+add(zero, X, Y) :- X = Y.
+add(inc(X), Y, Z) :- add(X, Y, V), Z = inc(V).
+mul(zero, _, zero).
+mul(inc(X),Y, Z) :- mul(X, Y, V), add(Y, V, Z).
+
+less(zero, inc(_)).
+
+
+
+
+
+
+
